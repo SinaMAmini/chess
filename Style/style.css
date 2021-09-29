@@ -1,0 +1,51 @@
+
+div{
+    border: white 8px;
+    width: 100px;
+    height: 100px;
+    /*background-color: salmon;*/
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+body{
+    background-color: black;
+}
+
+
+.Light_Square{
+    background-color: thistle;
+}
+
+.Dark_Square{
+    background-color: green;
+}
+
+body
+{
+    display: flex;
+}
+
+#Boaed, #Promute
+{
+    display: inline;
+}
+
+#Promute
+{
+    margin: 10px;
+}
+
+.PromutePiecesNotTime
+{
+    background-color: coral;
+    opacity: 15%;
+}
+
+.PromutePiecesTime
+{
+    background-color: coral;
+}

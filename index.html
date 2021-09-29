@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Now chess</title>
+        <link href="Style/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="Promute">
+            <table>
+                <tr width="100" height="100"><div></div></tr>
+                <tr width="100" height="100"><div></div></tr>
+                <tr><div id="queen" class="PromutePiecesNotTime" onclick="PromuteTime(id)"><img src="./Style/Chess Pieces/White Queen.svg" width="100" height="100"></div></tr>
+                <tr><div id="rook" class="PromutePiecesNotTime" onclick="PromuteTime(id)"><img src="./Style/Chess Pieces/White Rook.svg" width="100" height="100"></div></tr>
+                <tr><div id="bishop" class="PromutePiecesNotTime" onclick="PromuteTime(id)"><img src="./Style/Chess Pieces/White Bishop.svg" width="100" height="100"></div></tr>
+                <tr><div id="knight" class="PromutePiecesNotTime" onclick="PromuteTime(id)"><img src="./Style/Chess Pieces/White Knight.svg" width="100" height="100"></div></tr>
+                <tr width="100" height="100"><div></div></tr>
+                <tr width="100" height="100"><div></div></tr>
+            </table>
+        </div>
+        <div id="Board">
+            <table>
+                <tr>
+                    <td>
+                        <div id="a8" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b8" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c8" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d8" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e8" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f8" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g8" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h8" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a7" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b7" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c7" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d7" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e7" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f7" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g7" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h7" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a6" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b6" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c6" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d6" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e6" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f6" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g6" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h6" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a5" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b5" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c5" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d5" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e5" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f5" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g5" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h5" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a4" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b4" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c4" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d4" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e4" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f4" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g4" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h4" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a3" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b3" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c3" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d3" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e3" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f3" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g3" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h3" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a2" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b2" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c2" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d2" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e2" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f2" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g2" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h2" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="a1" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="b1" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="c1" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="d1" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="e1" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="f1" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="g1" class="Dark_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                    <td>
+                        <div id="h1" class="Light_Square" onclick="ClickFunction(id)"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="./Scripts/Chess Piece/Pieces.js"></script>
+        <script src="./Scripts/Chess Piece/King.js"></script>
+        <script src="./Scripts/Chess Piece/Queen.js"></script>
+        <script src="./Scripts/Chess Piece/Knight.js"></script>
+        <script src="./Scripts/Chess Piece/Rook.js"></script>
+        <script src="./Scripts/Chess Piece/Bishop.js"></script>
+        <script src="./Scripts/Chess Piece/Pawn.js"></script>
+        <script src="./Scripts/Move.js"></script>
+        <script src="./Scripts/Square.js"></script>
+        <script src="./Scripts/Color.js"></script>
+        <script src="./Scripts/Rules/Pieces Move.js"></script>
+        <script src="./Scripts/Start.js"></script>
+        <script src="./Scripts/Promute.js"></script>
+        <script src="./Scripts/Rules/Check.js"></script>
+        <script src="./Scripts/Game.js"></script>
+    </body>
+</html>
