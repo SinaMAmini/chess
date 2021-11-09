@@ -146,6 +146,10 @@ function ClickFunction(id){
                         console.log("illegal");
                     }
                 }
+                if(Math.abs(thisWhiteKing.square.row - thisBlackKing.square.row) < 2 && Math.abs(thisWhiteKing.square.column.charCodeAt(0) - thisBlackKing.square.column.charCodeAt(0)) < 2 ){
+                    CheckRule = false;
+                    console.log("illegal");
+                }
                 ChessBoard[firstSqu.row - 1][firstSqu.column.charCodeAt(0) - 97] = ChessBoard[secondSqu.row - 1][secondSqu.column.charCodeAt(0) - 97];
                 ChessBoard[firstSqu.row - 1][firstSqu.column.charCodeAt(0) - 97].square = new Square(id1.toString()[0] , parseInt(id1.toString()[1]));
                 ChessBoard[secondSqu.row - 1][secondSqu.column.charCodeAt(0) - 97] = null;

@@ -121,18 +121,5 @@ function isChecked(_KingSquare , _Color){
             else{break;}
         }
     }
-
-    // Enemy King!!!
-    /*for(let i = kingRow + 1; i >= kingRow - 1 && i >= 0; i--){
-        for(let j = kingColumn + 1; j >= kingColumn - 1 && j >= 0; j--){
-            console.log(i , j);
-            if(ChessBoard[i][j] != null){
-                if(ChessBoard[i][j].piece == ChessPiece.king && ChessBoard[i][j].color != _Color){
-                    console.log('Khak to saret!');
-                    return false;
-                }
-            }
-        }
-    }*/
     return true;
 }

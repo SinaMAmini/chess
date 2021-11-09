@@ -1,5 +1,5 @@
 
-div{
+td > div{
     border: white 8px;
     width: 100px;
     height: 100px;
@@ -29,7 +29,7 @@ body
     display: flex;
 }
 
-#Boaed, #Promute
+#Board, #Promute
 {
     display: inline;
 }
